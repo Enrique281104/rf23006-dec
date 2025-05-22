@@ -56,9 +56,10 @@ ld -m elf_i386 multiplicacion.o -o multiplicacion
 mov eax, [dividendo]  ; Cargar dividendo  
 xor edx, edx          ; Limpiar EDX (necesario para división)  
 div ebx               ; EAX = cociente, EDX = residuo  
-```bash
+```
 
 Compilación y ejecución:
+
 ```bash
 nasm -f elf32 division.asm -o division.o
 ld -m elf_i386 division.o -o division
