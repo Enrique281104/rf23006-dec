@@ -22,9 +22,11 @@ sudo apt install nasm gcc build-essential
 **Ejercicios Resueltos**
 **1. Resta de tres números enteros (16 bits)**
 
-mov ax, [num1]  ; Cargar primer número
-sub ax, [num2]  ; Restar segundo número
-sub ax, [num3]  ; Restar tercer número
+```bash
+mov ax, [num1]  ; Cargar primer número  
+sub ax, [num2]  ; Restar segundo número  
+sub ax, [num3]  ; Restar tercer número  
+```
 
 Compilación y ejecución:
 ```bash
@@ -35,9 +37,11 @@ ld -m elf_i386 resta.o -o resta
 
 **2. Multiplicación de dos números enteros (8 bits)**
 
-mov al, [num1]  ; Cargar primer número
-mov bl, [num2]  ; Cargar segundo número
-mul bl          ; AX = AL * BL
+```bash
+mov al, [num1]  ; Cargar primer número  
+mov bl, [num2]  ; Cargar segundo número  
+mul bl          ; AX = AL * BL  
+```
 
 Compilación y ejecución:
 ```bash
@@ -48,9 +52,11 @@ ld -m elf_i386 multiplicacion.o -o multiplicacion
 
 **3. División de dos números enteros (8 bits)**
 
-mov eax, [dividendo]  ; Cargar dividendo
-xor edx, edx          ; Limpiar EDX (necesario para división)
-div ebx               ; EAX = cociente, EDX = residuo
+```bash
+mov eax, [dividendo]  ; Cargar dividendo  
+xor edx, edx          ; Limpiar EDX (necesario para división)  
+div ebx               ; EAX = cociente, EDX = residuo  
+```bash
 
 Compilación y ejecución:
 ```bash
@@ -59,7 +65,7 @@ ld -m elf_i386 division.o -o division
 ./division
 ```
 
-## Autor
-Nombre: Enrique Guillermo Rivera Flores
-Carnet: rf23006
-GitHub: Enrique281104
+## Autor  
+**Nombre:** Enrique Guillermo Rivera Flores  
+**Carnet:** rf23006  
+**Usuario de GitHub:** Enrique281104  
