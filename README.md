@@ -17,6 +17,7 @@
 ```bash
 sudo apt update
 sudo apt install nasm gcc build-essential
+```
 
 🧮 Ejercicios Resueltos
 1️⃣ Resta de tres números enteros (16 bits)
